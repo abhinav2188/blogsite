@@ -1,6 +1,10 @@
+html{
+  height:100%;
+}
 body{
   background-color: #f1f1f1;
   font-family: 'Cabin', sans-serif;
+  height: 100%;
 }
 a{
   text-decoration: none;
@@ -11,9 +15,14 @@ a:hover{
   text-shadow: 2px 2px 4px;
 }
 footer{
-  padding: 4rem;
+  width:100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: 1px -1px 10px -9px;
   display:flex;
   justify-content: center;
+  position:relative;
+  bottom:0;
 }
 nav{
   padding: 2rem 0rem;
