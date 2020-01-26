@@ -6,7 +6,7 @@
   <% posts.forEach( post => { %>
     <div class="post">
       <h3><%= post.title %></h3>
-      <p class="truncate"><%= post.body %></p>
+      <p><%= post.body.substring(0,100) + "..." %></p>
     </div>
   <% }); %>
 </div>
