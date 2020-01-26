@@ -49,5 +49,13 @@ app.post('/compose',function(req,res){
 });
 
 app.get('/post/:postTitle' , function(req,res){
-  console.log(req.params.postTitle);
+  reqPostTitle = req.params.postTitle.split('-').join(' ');
+  posts.forEach(post => {
+    if(post.title.toLowerCase() === reqPostTitle){
+      console.log("match found");
+      res.render('post',{
+        post : post,
+      })
+    }
+  })
 })
