@@ -1,0 +1,56 @@
+body{
+  background-color: #f1f1f1;
+  font-family: 'Cabin', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #454545;
+  padding:1rem;
+}
+a:hover{
+  text-shadow: 2px 2px 4px;
+}
+footer{
+  padding: 4rem;
+  display:flex;
+  justify-content: center;
+}
+nav{
+  padding: 2rem 0rem;
+}
+.post{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 2px;
+}
+.compose{
+  display : flex;
+  flex-direction : column;
+  padding: 2rem;
+}
+.w-4\/5{
+  width:80%;
+}
+.mx-auto{
+  margin : auto;
+}
+.flex{
+  display : flex;
+}
+.self-center{
+  align-items: center;
+}
+.self-start{
+  align-items: flex-start;
+}
+.justify-center{
+  justify-content: center;
+}
+.justify-around{
+  justify-content: space-around;
+}
+.justify-between{
+  justify-content: space-between;
+}
