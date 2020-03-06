@@ -78,7 +78,6 @@ app.post('/compose',function(req,res){
 app.get('/post/:postId' , function(req,res){
   reqPostId = req.params.postId;
   Post.findById(reqPostId,(err,foundPost) => {
-    console.log("match found");
     res.render('post',{
       post:foundPost
     });

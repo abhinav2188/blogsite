@@ -1,15 +1,11 @@
 <%- include('partials/header.ejs') -%>
-
-<div class="">
-  <h2>Compose</h2>
-  <form class="compose" action="/compose" method="post">
-    <label for="postTitle">Title</label>
-    <input type="text" name="postTitle" style="padding:0.5rem;">
-    <br>
-    <label for="postBody">Body</label>
-    <textarea name="postBody" rows="8" cols="80" style="padding:0.5rem;"></textarea>
-    <br>
-    <button type="submit" name="button" style="width:8rem; padding:0.4rem;">Publish</button>
+<div >
+  <form class="compose my-4 flex flex-col" action="/compose" method="post">
+    <div class="my-4 p-4 border rounded-lg flex flex-col">
+      <input class="p-2 mb-2" placeholder="Title" type="text" name="postTitle">
+      <textarea class="p-2" name="postBody" rows="8" placeholder="Content"></textarea>
+    </div>
+    <button class="my-4 px-8 py-2 bg-blue-500 self-center rounded-lg active:bg-blue-600" type="submit" name="button">Publish</button>
   </form>
 </div>
 

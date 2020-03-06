@@ -1,17 +1,68 @@
 <%- include('partials/header.ejs') -%>
 
-<div class="">
-  <h2>Home</h2>
-  <p><%= homeStartingContent %></p>
-  <% posts.forEach( post => { %>
-    <div class="post">
-      <h3><%= post.title %></h3>
-      <p>
-        <%= post.body.substring(0,100) + "..." %>
-        <a href="/post/<%= post._id%>"> Read more</a>
-      </p>
+  <div class="blog-container py-16 px-4">
+    <% posts.forEach( post => { %>
+      <div class="relative mb-4">
+        <img class="w-full" src="https://picsum.photos/200/300" alt="">
+        <div class="absolute bottom-0 bg-white-op50 p-2">
+          <h3 class="text-lg font-semi-bold"><%= post.title %></h3>
+          <p>
+            <%= post.body.substring(0,100) + "..." %>
+            <a href="/post/<%= post._id%>"> Read more</a>
+          </p>
+        </div>
+      </div>
+    <% }); %>
+    <div class="relative mb-4">
+      <div class=" bottom-0 bg-white-op50 p-2 border">
+        <h3 class="text-lg font-semi-bold">Lorem ipsnds</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh turpis, imperdi
+          <a href=""> Read more</a>
+        </p>
+      </div>
     </div>
-  <% }); %>
-</div>
+    <div class="relative mb-4">
+      <img class="w-full" src="https://picsum.photos/200/600" alt="">
+      <div class="absolute bottom-0 bg-white-op50 p-2">
+        <h3 class="text-lg font-semi-bold">Lorem ipsnds</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh turpis, imperdi
+          <a href=""> Read more</a>
+        </p>
+      </div>
+    </div>
+    <div class="relative mb-4">
+      <img class="w-full" src="https://picsum.photos/200/100" alt="">
+      <div class="absolute bottom-0 bg-white-op50 p-2">
+        <h3 class="text-lg font-semi-bold">Lorem ipsnds</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh turpis, imperdi
+          <a href=""> Read more</a>
+        </p>
+      </div>
+    </div>
+    <div class="relative mb-4">
+      <img class="w-full" src="https://picsum.photos/200/300" alt="">
+      <div class="absolute bottom-0 bg-white-op50 p-2">
+        <h3 class="text-lg font-semi-bold">Lorem ipsnds</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh turpis, imperdi
+          <a href=""> Read more</a>
+        </p>
+      </div>
+    </div>
+    <div class="relative mb-4">
+      <img class="w-full" src="https://picsum.photos/200/200" alt="">
+      <div class="absolute bottom-0 bg-white-op50 p-2">
+        <h3 class="text-lg font-semi-bold">Lorem ipsnds</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nibh turpis, imperdi
+          <a href=""> Read more</a>
+        </p>
+      </div>
+    </div>
 
-<%- include('partials/footer.ejs') -%>
+  </div>
+ 
+<%- include('partials/footer.ejs') -%>  
