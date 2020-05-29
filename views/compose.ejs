@@ -1,10 +1,10 @@
 <%- include('partials/header.ejs') -%>
-<div >
+<div class="w-1/2 mx-auto">
   <form class="compose my-4 flex flex-col" action="/compose" method="post">
     <div class="my-4 p-4 border rounded-lg flex flex-col items-start">
       <input class="p-2 mb-2 w-full" placeholder="Title" type="text" name="postTitle">
       <textarea class="p-2 mb-2 w-full" name="postBody" rows="8" placeholder="Content"></textarea>
-      <input id="postImage" class="" type="file" name="postImage" accept="image/*">
+      <!-- <input id="postImage" class="" type="file" name="postImage" accept="image/*"> -->
     </div>
     <button class="my-4 px-8 py-2 bg-blue-500 self-center rounded-lg active:bg-blue-600" type="submit" name="button">Publish</button>
   </form>
