@@ -23,6 +23,10 @@ const postSchema = new mongoose.Schema({
   body:{
     type:String,
     required:true
+  },
+  images:{
+    type:Array,
+    required:false,
   }
 });
 const Post = mongoose.model('post',postSchema);
@@ -66,9 +70,12 @@ app.get('/compose',function(req,res){
 
 // compose new post
 app.post('/compose',function(req,res){
+  let imgArr = [req.body.postImage,];
+  console.log(imgArr);
   let newPost = new Post({
     title : req.body.postTitle,
-    body: req.body.postBody
+    body: req.body.postBody,
+    images:imgArr
   });
   newPost.save();
   res.redirect('/');
